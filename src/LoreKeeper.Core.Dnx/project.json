@@ -1,0 +1,27 @@
+﻿{
+  "id": "LoreKeeper.Core",
+  "version": "1.0.0-*",
+  "description": "Additional interfaces and core implementations for CQRS DataAccess.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/VeselovAndrey/LoreKeeper"
+  },
+  "authors": [ "Andrey Veselov" ],
+  "tags": [ "CQRS", "QueryObject", "Data Access", "Query", "Command", "UnitOfWork" ],
+  "projectUrl": "https://github.com/VeselovAndrey/LoreKeeper",
+  "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+
+  "dependencies": {
+    "LoreKeeper.Dnx": ""
+  },
+
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": {
+      "dependencies": {
+        "System.Diagnostics.Contracts": "4.0.0",
+        "Microsoft.CSharp": "4.0.0"
+      }
+    }
+  }
+}

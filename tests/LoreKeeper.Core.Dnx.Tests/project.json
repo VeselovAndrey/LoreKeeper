@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0-*",
+  "description": "Tests for LoreKeeper.Core library.",
+  "authors": [ "Andrey Veselov" ],
+  "tags": [ "" ],
+  "projectUrl": "https://github.com/VeselovAndrey/LoreKeeper",
+  "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+
+  "dependencies": {
+    "xunit": "2.1.0-beta4-build3109",
+    "xunit.runner.dnx": "2.1.0-beta4-build134",
+
+    "LoreKeeper.Dnx": "",
+    "LoreKeeper.Core.Dnx": "",
+    "LoreKeeper.Tests.Core.Dnx": "",
+    "LoreKeeper.Tests.DataAccess.Dnx": ""
+  },
+
+  "commands": {
+    "test": "xunit.runner.dnx"
+  },
+
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": {
+      "dependencies": {
+        "System.Diagnostics.Contracts": "4.0.0",
+        "Microsoft.CSharp": "4.0.0"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+﻿{
+  "id": "LoreKeeper",
+  "version": "1.0.0-*",
+  "description": "Command Query Responsibility Segregation (CQRS) pattern interfaces.",
+  "repository": { 
+    "type": "git", 
+    "url": "git://github.com/VeselovAndrey/LoreKeeper" 
+  }, 
+  "authors": [ "Andrey Veselov" ],
+  "tags": [ "CQRS", "QueryObject", "Data Access", "Query", "Command", "UnitOfWork" ],
+  "projectUrl": "https://github.com/VeselovAndrey/LoreKeeper",
+  "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+
+  "dependencies": {
+  },
+
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": {
+      "dependencies": {
+        "System.Diagnostics.Contracts": "4.0.0",
+        "Microsoft.CSharp": "4.0.0"
+      }
+    }
+  }
+}

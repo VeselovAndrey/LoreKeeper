@@ -1,0 +1,25 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "DataAcces implemetation for LoreKeeper tests.",
+  "authors": [ "Andrey Veselov" ],
+  "tags": [ "" ],
+  "projectUrl": "https://github.com/VeselovAndrey/LoreKeeper",
+  "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+
+  "dependencies": {
+
+    "LoreKeeper.Dnx": "",
+    "LoreKeeper.Core.Dnx": "",
+    "LoreKeeper.Tests.Core.Dnx": ""
+  },
+
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": {
+      "dependencies": {
+        "System.Diagnostics.Contracts": "4.0.0",
+        "Microsoft.CSharp": "4.0.0"
+      }
+    }
+  }
+}

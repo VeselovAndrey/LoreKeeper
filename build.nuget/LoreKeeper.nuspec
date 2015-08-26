@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>LoreKeeper</id>
+    <version>1.0.0</version>
+    <title>LoreKeeper</title>
+    <authors>Andrey Veselov</authors>
+    <owners>Andrey Veselov</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/VeselovAndrey/LoreKeeper</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Command Query Responsibility Segregation (CQRS) pattern core interfaces.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright © 2013-2015 Andrey Veselov</copyright>
+    <tags>CQRS, Data Access, Query, Command, UnitOfWork</tags>
+
+    <references>
+      <group targetFramework="dnx451">
+        <reference file="LoreKeeper.Dnx.dll" />
+      </group>
+      <group targetFramework="dnxcore50">
+        <reference file="LoreKeeper.Dnx.dll" />
+      </group>
+      <group>
+        <reference file="LoreKeeper.dll" />
+      </group>
+    </references>
+
+    <dependencies>
+      <group targetFramework="dnx451">
+      </group>
+      <group targetFramework="dnxcore50">
+        <dependency id="System.Diagnostics.Contracts" version="4.0.0" />
+        <dependency id="Microsoft.CSharp" version="4.0.0" />
+      </group>
+    </dependencies>
+    
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="mscorlib" targetFramework="dnx451" />
+      <frameworkAssembly assemblyName="System" targetFramework="dnx451" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework="dnx451" />
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework="dnx451" />
+    </frameworkAssemblies>
+
+  </metadata>
+
+  <files>
+    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\dnx451\LoreKeeper.Dnx.dll" target="lib\dnx451\" />
+    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\dnx451\LoreKeeper.Dnx.xml" target="lib\dnx451\" />
+    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\dnx451\LoreKeeper.Dnx.pdb" target="lib\dnx451\" />
+
+    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\dnxcore50\LoreKeeper.Dnx.dll" target="lib\dnxcore50\" />
+    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\dnxcore50\LoreKeeper.Dnx.xml" target="lib\dnxcore50\" />
+    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\dnxcore50\LoreKeeper.Dnx.pdb" target="lib\dnxcore50\" />
+
+    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\portable\LoreKeeper.dll" target="lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\" />
+    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\portable\LoreKeeper.xml" target="lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\" />
+    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\portable\LoreKeeper.pdb" target="lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\" />
+    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\portable\CodeContracts\LoreKeeper.Contracts.dll" target="lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\" />
+    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\portable\CodeContracts\LoreKeeper.Contracts.pdb" target="lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\" />
+  </files>
+</package>
