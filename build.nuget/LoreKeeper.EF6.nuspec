@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>LoreKeeper.EF6</id>
+    <version>1.0.0.0</version>
+    <title>LoreKeeper: Entity Framework 6 implementation.</title>
+    <authors>Andrey Veselov</authors>
+    <owners>Andrey Veselov</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/VeselovAndrey/LoreKeeper</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Entity Framework 6 implementation of LoreKeeper.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright © 2013-2015 Andrey Veselov</copyright>
+    <tags>CQRS, Data Access, Query, Command, UnitOfWork, EntityFramework, EF6</tags>
+    
+    <references>
+      <reference file="LoreKeeper.EF6.dll" />
+    </references>
+    
+    <dependencies>
+      <dependency id="EntityFramework" version="6.1.3" />
+      <dependency id="Microsoft.Bcl.Async" version="1.0.168" />
+      <dependency id="CqrsDataAccess" version="3.0" />
+      <dependency id="CqrsDataAccess.Highway" version="3.0" />
+    </dependencies>
+    
+  </metadata>
+  
+  <files>
+    <file src="..\artifacts\bin\LoreKeeper.EF6\Release\net45\LoreKeeper.EF6.dll" target="lib\net45\" />
+    <file src="..\artifacts\bin\LoreKeeper.EF6\Release\net45\LoreKeeper.EF6.xml" target="lib\net45\" />
+    <file src="..\artifacts\bin\LoreKeeper.EF6\Release\net45\LoreKeeper.EF6.pdb" target="lib\net45\" />
+    <file src="..\artifacts\bin\LoreKeeper.EF6\Release\net45\CodeContracts\LoreKeeper.EF6.Contracts.dll" target="lib\net45\" />
+    <file src="..\artifacts\bin\LoreKeeper.EF6\Release\net45\CodeContracts\LoreKeeper.EF6.Contracts.pdb" target="lib\net45\" />
+  </files>
+</package>
