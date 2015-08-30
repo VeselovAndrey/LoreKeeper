@@ -248,7 +248,7 @@ namespace LoreKeeper.EF6.Tests
                 .ExecuteSingleQuery<IGetAllQuery, IEnumerable<UserDto>>(q => q.Execute<UserDto>());
 
             // NOTE: handler for this command should update all entries at once
-            var cmd = new DisableOldUsersCommand(DateTime.Now);
+            var cmd = new DisableOldUsersCommand(DateTime.Now + TimeSpan.FromHours(1));
 
             // Act
             this._unitOfWorkFactory.ExecuteSingleCommand(cmd);
