@@ -164,45 +164,6 @@ namespace LoreKeeper.EF6.Tests
         }
 
         [Fact]
-        public async Task ExecuteQueriesAtSameTimeAsync()
-        {
-            // Arrange 
-            this._dbFixture.TestInitialize();
-
-            User user = null;
-            IEnumerable<Link> links = null;
-
-            // Act
-            using (var unitOfWork = this._unitOfWorkFactory.Create()) {
-                Task<User> query1 = unitOfWork
-                    .ResolveQuery<IGetUserByIdAsyncQuery>()
-                    .ExecuteAsync(this._sampleData.Id, includeLinks: true);
-
-                Task<IEnumerable<Link>> query2 = unitOfWork
-                    .ResolveQuery<IGetLinksByUserIdAsyncQuery>()
-                    .ExecuteAsync(this._sampleData.Id);
-
-                await Task.WhenAll(query1, query2);
-
-                user = query1.Result;
-                links = query2.Result;
-            }
-
-            // Assert
-            Assert.NotNull(user);
-            Assert.NotNull(user.Links);
-            Assert.NotNull(links);
-
-            Assert.Equal(user.Links.Count(), links.Count());
-
-            bool allLinksWasFound = user.Links
-                .Select(l => links.Any(e => (e.Id == l.Id)))
-                .Aggregate(true, (acc, val) => acc && val);
-
-            Assert.True(allLinksWasFound);
-        }
-
-        [Fact]
         public async Task ExecuteQueriesAsync()
         {
             // Arrange 

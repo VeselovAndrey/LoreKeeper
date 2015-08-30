@@ -28,10 +28,10 @@
   </metadata>
   
   <files>
-    <file src="..\artifacts\bin\LoreKeeper.EF6\Release\net45\LoreKeeper.EF6.dll" target="lib\net45\" />
-    <file src="..\artifacts\bin\LoreKeeper.EF6\Release\net45\LoreKeeper.EF6.xml" target="lib\net45\" />
-    <file src="..\artifacts\bin\LoreKeeper.EF6\Release\net45\LoreKeeper.EF6.pdb" target="lib\net45\" />
-    <file src="..\artifacts\bin\LoreKeeper.EF6\Release\net45\CodeContracts\LoreKeeper.EF6.Contracts.dll" target="lib\net45\" />
-    <file src="..\artifacts\bin\LoreKeeper.EF6\Release\net45\CodeContracts\LoreKeeper.EF6.Contracts.pdb" target="lib\net45\" />
+    <file src="..\..\artifacts\bin\LoreKeeper.EF6\Release\net45\LoreKeeper.EF6.dll" target="lib\net45\" />
+    <file src="..\..\artifacts\bin\LoreKeeper.EF6\Release\net45\LoreKeeper.EF6.xml" target="lib\net45\" />
+    <file src="..\..\artifacts\bin\LoreKeeper.EF6\Release\net45\LoreKeeper.EF6.pdb" target="lib\net45\" />
+    <file src="..\..\artifacts\bin\LoreKeeper.EF6\Release\net45\CodeContracts\LoreKeeper.EF6.Contracts.dll" target="lib\net45\" />
+    <file src="..\..\artifacts\bin\LoreKeeper.EF6\Release\net45\CodeContracts\LoreKeeper.EF6.Contracts.pdb" target="lib\net45\" />
   </files>
 </package>

@@ -20,7 +20,7 @@ namespace LoreKeeper.EF6.Tests.Fixtures
     using LoreKeeper.Tests.Core.Models;
     using LoreKeeper.Tests.Core.Queries;
 
-    public class DatabaseFixture : IDisposable
+    public sealed class DatabaseFixture : IDisposable
     {
         private static string _modelAssembly = "LoreKeeper.Tests.Core";
         private static string _dataAccessAssembly = "LoreKeeper.EF6.Tests";

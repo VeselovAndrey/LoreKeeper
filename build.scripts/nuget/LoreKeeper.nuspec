@@ -45,18 +45,18 @@
   </metadata>
 
   <files>
-    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\dnx451\LoreKeeper.Dnx.dll" target="lib\dnx451\" />
-    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\dnx451\LoreKeeper.Dnx.xml" target="lib\dnx451\" />
-    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\dnx451\LoreKeeper.Dnx.pdb" target="lib\dnx451\" />
+    <file src="..\..\artifacts\bin\LoreKeeper Dnx\Release\dnx451\LoreKeeper.Dnx.dll" target="lib\dnx451\" />
+    <file src="..\..\artifacts\bin\LoreKeeper Dnx\Release\dnx451\LoreKeeper.Dnx.xml" target="lib\dnx451\" />
+    <file src="..\..\artifacts\bin\LoreKeeper Dnx\Release\dnx451\LoreKeeper.Dnx.pdb" target="lib\dnx451\" />
 
-    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\dnxcore50\LoreKeeper.Dnx.dll" target="lib\dnxcore50\" />
-    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\dnxcore50\LoreKeeper.Dnx.xml" target="lib\dnxcore50\" />
-    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\dnxcore50\LoreKeeper.Dnx.pdb" target="lib\dnxcore50\" />
+    <file src="..\..\artifacts\bin\LoreKeeper Dnx\Release\dnxcore50\LoreKeeper.Dnx.dll" target="lib\dnxcore50\" />
+    <file src="..\..\artifacts\bin\LoreKeeper Dnx\Release\dnxcore50\LoreKeeper.Dnx.xml" target="lib\dnxcore50\" />
+    <file src="..\..\artifacts\bin\LoreKeeper Dnx\Release\dnxcore50\LoreKeeper.Dnx.pdb" target="lib\dnxcore50\" />
 
-    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\portable\LoreKeeper.dll" target="lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\" />
-    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\portable\LoreKeeper.xml" target="lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\" />
-    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\portable\LoreKeeper.pdb" target="lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\" />
-    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\portable\CodeContracts\LoreKeeper.Contracts.dll" target="lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\" />
-    <file src="..\artifacts\bin\LoreKeeper Dnx\Release\portable\CodeContracts\LoreKeeper.Contracts.pdb" target="lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\" />
+    <file src="..\..\artifacts\bin\LoreKeeper Dnx\Release\portable\LoreKeeper.dll" target="lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\" />
+    <file src="..\..\artifacts\bin\LoreKeeper Dnx\Release\portable\LoreKeeper.xml" target="lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\" />
+    <file src="..\..\artifacts\bin\LoreKeeper Dnx\Release\portable\LoreKeeper.pdb" target="lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\" />
+    <file src="..\..\artifacts\bin\LoreKeeper Dnx\Release\portable\CodeContracts\LoreKeeper.Contracts.dll" target="lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\" />
+    <file src="..\..\artifacts\bin\LoreKeeper Dnx\Release\portable\CodeContracts\LoreKeeper.Contracts.pdb" target="lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\" />
   </files>
 </package>
