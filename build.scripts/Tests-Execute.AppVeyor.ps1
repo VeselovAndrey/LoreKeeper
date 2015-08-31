@@ -1,9 +1,9 @@
 param([String]$solutionDirectory="")
 
 # ===== Load settings
-. $($(Split-Path $script:MyInvocation.MyCommand.Path) + "\BuildSettings.ps1") -solutionDirectory $solutionDirectory
+. $($(Split-Path $script:MyInvocation.MyCommand.Path) + "\Settings.ps1") -solutionDirectory $solutionDirectory
 
-$totalCode = 0
+$failCode = 0
 
 # ====== Run Dnx test
 foreach ($prj in $dnxTests) {
@@ -11,12 +11,12 @@ foreach ($prj in $dnxTests) {
 
 	cd $($solutionDirectory + "\tests\" + $prj)
 	dnx . test -appveyor -xml $dnxTestReportXml
+
 	$errCode = $LASTEXITCODE
+	if (($failCode -eq 0) -and ($errCode -ne 0)) { $failCode = $errCode }
 	
 	$wc = New-Object 'System.Net.WebClient'
 	$wc.UploadFile("https://ci.appveyor.com/api/testresults/xunit/$($env:APPVEYOR_JOB_ID)", (Resolve-Path .\$dnxTestReportXml))
-
-	if ($errCode -ne 0) { exit $errCode; }
 }
 
 # ===== Install xUnit console runner and get path to it
@@ -31,9 +31,9 @@ foreach ($prj in $consoleTests) {
 	$xUnitParameters = @($testAssembly, "-appveyor")
 
 	&$xUnitRunner.FullName $xUnitParameters
-	$errCode = $LASTEXITCODE
 
-	if ($LASTEXITCODE -ne 0) { exit $errCode; }
+	$errCode = $LASTEXITCODE
+	if (($failCode -eq 0) -and ($errCode -ne 0)) { $failCode = $errCode }	
 }
 
-exit 0
+exit $failCode

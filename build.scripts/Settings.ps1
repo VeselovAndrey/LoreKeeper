@@ -12,7 +12,7 @@ $nuspecDirectory = $solutionDirectory + "\build.scripts\nuget"
 $nugetExecutable = $nuspecDirectory + "\nuget"
 $outputPackagesDirectory = $nuspecDirectory + "\release"
 
-$portableProjects = @(
+$netProjects = @(
 	"\src\LoreKeeper.Core",
 	"\src\LoreKeeper.EF6",
 	"\src\LoreKeeper.Bootstrappers.Autofac",

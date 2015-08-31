@@ -51,11 +51,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspecs", "nuspecs", "{3228
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build Scripts", "Build Scripts", "{9A627286-53E5-48FE-8BB2-406159423C26}"
 	ProjectSection(SolutionItems) = preProject
-		build.scripts\AfterBuild.ps1 = build.scripts\AfterBuild.ps1
-		build.scripts\BeforeBuild.ps1 = build.scripts\BeforeBuild.ps1
-		build.scripts\BuildSettings.ps1 = build.scripts\BuildSettings.ps1
-		build.scripts\ExecuteTests.AppVeyor.ps1 = build.scripts\ExecuteTests.AppVeyor.ps1
-		build.scripts\InstallEnvironment.ps1 = build.scripts\InstallEnvironment.ps1
+		build.scripts\Build-After.ps1 = build.scripts\Build-After.ps1
+		build.scripts\Build-Before.ps1 = build.scripts\Build-Before.ps1
+		build.scripts\Environment-InstallDnx.ps1 = build.scripts\Environment-InstallDnx.ps1
+		build.scripts\Settings.ps1 = build.scripts\Settings.ps1
+		build.scripts\Tests-Execute.AppVeyor.ps1 = build.scripts\Tests-Execute.AppVeyor.ps1
 	EndProjectSection
 EndProject
 Global
