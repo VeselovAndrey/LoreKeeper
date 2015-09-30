@@ -1,6 +1,6 @@
 ﻿{
   "id": "LoreKeeper.Bootstrappers.Autofac",
-  "version": "1.0.0-beta6-110",
+  "version": "1.0.0-beta7-130",
   "description": "LoreKeeper: Autofac bootstrapper",
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
   "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
 
   "dependencies": {
-    "Autofac": "4.0.0-beta6-110",
+    "Autofac": "4.0.0-beta7-130",
 
     "LoreKeeper.Dnx": "",
     "LoreKeeper.Core.Dnx": ""

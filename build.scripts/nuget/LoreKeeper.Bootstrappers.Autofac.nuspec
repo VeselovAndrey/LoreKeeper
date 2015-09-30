@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>LoreKeeper.Bootstrappers.Autofac</id>
-    <version>1.0.0-beta6-110</version>
+    <version>1.0.0-beta7-130</version>
     <title>LoreKeeper: Autofac bootstrapper.</title>
     <authors>Andrey Veselov</authors>
     <owners>Andrey Veselov</owners>
@@ -12,7 +12,7 @@
     <description>Autofac bootstraper for LoreKeeper.</description>
     <releaseNotes></releaseNotes>
     <copyright>Copyright © 2013-2015 Andrey Veselov</copyright>
-    <tags>CQRS, Highway, QueryObject, Data Access, Query, Command, UnitOfWork</tags>
+    <tags>CQRS, QueryObject, Data Access, Query, Command, UnitOfWork</tags>
 
     <references>
       <group targetFramework="dnx451">
@@ -28,21 +28,21 @@
 
     <dependencies>
       <group targetFramework="dnx451">
-        <dependency id="Autofac" version="4.0.0-beta6-110" />
-        <dependency id="CqrsDataAccess" version="3.0" />
-        <dependency id="CqrsDataAccess.Highway" version="3.0" />
+        <dependency id="Autofac" version="4.0.0-beta7-130" />
+        <dependency id="LoreKeeper" version="1.0.0" />
+        <dependency id="LoreKeeper.Core" version="1.0.0" />
       </group>
       <group targetFramework="dnxcore50">
-        <dependency id="Autofac" version="4.0.0-beta6-110" />
+        <dependency id="Autofac" version="4.0.0-beta7-130" />
         <dependency id="System.Diagnostics.Contracts" version="4.0.0" />
         <dependency id="Microsoft.CSharp" version="4.0.0" />
-        <dependency id="CqrsDataAccess" version="3.0" />
-        <dependency id="CqrsDataAccess.Highway" version="3.0" />
+        <dependency id="LoreKeeper" version="1.0.0" />
+        <dependency id="LoreKeeper.Core" version="1.0.0" />
       </group>
       <group>
         <dependency id="Autofac" version="3.5.2" />
-        <dependency id="CqrsDataAccess" version="3.0" />
-        <dependency id="CqrsDataAccess.Highway" version="3.0" />
+        <dependency id="LoreKeeper" version="1.0.0" />
+        <dependency id="LoreKeeper.Core" version="1.0.0" />
       </group>
     </dependencies>
 
