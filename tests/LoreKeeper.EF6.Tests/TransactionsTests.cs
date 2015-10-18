@@ -79,7 +79,7 @@ namespace LoreKeeper.EF6.Tests
 
                 this._dbFixture.InsertObjectsIntoRepository(unitOfWork, objectToInsert);
 
-                using (var innerUnitOfWork = unitOfWork.BeginTransaction()) {
+                using (var innerUnitOfWork = unitOfWork.BeginTransaction(enableInnerTransaction: true)) {
                     this._dbFixture.InsertObjectsIntoRepository(innerUnitOfWork, objectToInsert);
                     innerUnitOfWork.Commit();
                 }

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>LoreKeeper.EF6</id>
-    <version>1.0.0.1</version>
+    <version>1.0.0.2</version>
     <title>LoreKeeper: Entity Framework 6 implementation.</title>
     <authors>Andrey Veselov</authors>
     <owners>Andrey Veselov</owners>

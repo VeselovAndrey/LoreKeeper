@@ -46,12 +46,24 @@ namespace LoreKeeper.EF6
         }
 
         public EFUnitOfWork(ICqrsDependencyResolver dependecyResolver, bool enableTransactions)
-            : base(dependecyResolver)
+            : this(dependecyResolver, enableTransactions, useCurrentTransaction: false)
+        {
+        }
+
+        public EFUnitOfWork(ICqrsDependencyResolver dependecyResolver, TransactionOptions transactionOptions)
+            : this(dependecyResolver, transactionOptions, useCurrentTransaction: false)
+        {
+        }
+
+        private EFUnitOfWork(ICqrsDependencyResolver dependecyResolver, bool enableTransactions, bool useCurrentTransaction)
+             : base(dependecyResolver)
         {
             // Enable transaction if required
             if (enableTransactions) {
                 this._transactionOptions = new TransactionOptions { IsolationLevel = IsolationLevel.ReadUncommitted };
-                this._transactionScope = new TransactionScope(TransactionScopeOption.RequiresNew, this._transactionOptions);
+                this._transactionScope = new TransactionScope(
+                    useCurrentTransaction ? TransactionScopeOption.Required : TransactionScopeOption.RequiresNew,
+                    this._transactionOptions);
             }
             else
                 this._transactionScope = null;
@@ -62,12 +74,14 @@ namespace LoreKeeper.EF6
             this._repository = new Lazy<IRepository>(() => (IRepository)new EFRepository(this._context));
         }
 
-        public EFUnitOfWork(ICqrsDependencyResolver dependecyResolver, TransactionOptions transactionOptions)
+        private EFUnitOfWork(ICqrsDependencyResolver dependecyResolver, TransactionOptions transactionOptions, bool useCurrentTransaction)
             : base(dependecyResolver)
         {
             // Enable transaction
             this._transactionOptions = transactionOptions;
-            this._transactionScope = new TransactionScope(TransactionScopeOption.RequiresNew, this._transactionOptions);
+            this._transactionScope = new TransactionScope(
+                useCurrentTransaction ? TransactionScopeOption.Required : TransactionScopeOption.RequiresNew,
+                this._transactionOptions);
 
             // Create data context
             this._context = new TDbContext();
@@ -97,7 +111,7 @@ namespace LoreKeeper.EF6
             if (this._transactionScope == null)
                 throw new InvalidOperationException("Transaction not initialized.");
 
-            return new EFUnitOfWork<TDbContext>(this._dependencyResolver, this._transactionOptions);
+            return new EFUnitOfWork<TDbContext>(this._dependencyResolver, this._transactionOptions, useCurrentTransaction: true);
         }
 
         public override IUnitOfWork BeginTransaction(TransactionIsolationLevel isolationLevel)
@@ -109,7 +123,7 @@ namespace LoreKeeper.EF6
                 IsolationLevel = (IsolationLevel)isolationLevel
             };
 
-            return new EFUnitOfWork<TDbContext>(this._dependencyResolver, transactionOptions);
+            return new EFUnitOfWork<TDbContext>(this._dependencyResolver, transactionOptions, useCurrentTransaction: true);
         }
 
         public override IUnitOfWork BeginTransaction(TransactionIsolationLevel isolationLevel, TimeSpan timeout)
@@ -122,7 +136,7 @@ namespace LoreKeeper.EF6
                 Timeout = timeout
             };
 
-            return new EFUnitOfWork<TDbContext>(this._dependencyResolver, transactionOptions);
+            return new EFUnitOfWork<TDbContext>(this._dependencyResolver, transactionOptions, useCurrentTransaction: true);
         }
 
         public override void Commit()
