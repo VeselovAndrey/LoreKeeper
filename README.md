@@ -11,5 +11,5 @@ CQRS pattern implementation for data storing, updating, and retrieval.
 [![NuGet - LoreKeeper.EF6](https://img.shields.io/nuget/v/LoreKeeper.EF6.svg?label=LoreKeeper.EF6&style=flat-square)](https://www.nuget.org/packages/LoreKeeper.EF6/)
 [![NuGet - LoreKeeper.Bootstrappers.Autofac](https://img.shields.io/nuget/v/LoreKeeper.Bootstrappers.Autofac.svg?label=LoreKeeper.Bootstrappers.Autofac&style=flat-square)](https://www.nuget.org/packages/LoreKeeper.Bootstrappers.Autofac/)
 
-## In progres: ##
+## In progress ##
 [![NuGet - LoreKeeper.EF7](https://img.shields.io/myget/lorekeeper/v/LoreKeeper.EF7.svg?label=LoreKeeper.EF7&style=flat-square)](https://www.myget.org/feed/lorekeeper/package/nuget/LoreKeeper.EF7)
