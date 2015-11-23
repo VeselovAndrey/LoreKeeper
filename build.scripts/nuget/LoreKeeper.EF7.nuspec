@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>LoreKeeper.EF7</id>
+    <version>1.0.0-rc1-final-0</version>
+    <title>LoreKeeper: Entity Framework 7 implementation.</title>
+    <authors>Andrey Veselov</authors>
+    <owners>Andrey Veselov</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/VeselovAndrey/CQRS-DataAccess-Highway</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Entity Framework 7 implementation of LoreKeeper.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright © 2015 Andrey Veselov</copyright>
+    <tags>CQRS, Data Access, Query, Command, UnitOfWork, EntityFramework, EF7W</tags>
+
+    <references>
+      <group targetFramework="dnx451">
+        <reference file="LoreKeeper.EF7.Dnx.dll" />
+      </group>
+      <group targetFramework="dnxcore50">
+        <reference file="LoreKeeper.EF7.Dnx.dll" />
+      </group>
+    </references>
+
+    <dependencies>
+      <group targetFramework="dnx451">
+        <dependency id="EntityFramework.Core" version="7.0.0-rc1-final" />
+        <dependency id="EntityFramework.Relational" version="7.0.0-rc1-final" />
+        <dependency id="EntityFramework.SqlServer" version="7.0.0-rc1-final" />
+        <dependency id="LoreKeeper" version="1.0" />
+        <dependency id="LoreKeeper.Core" version="1.0" />
+      </group>
+      
+      <group targetFramework="dnxcore50">
+        <dependency id="EntityFramework.Core" version="7.0.0-rc1-final" />
+        <dependency id="EntityFramework.Relational" version="7.0.0-rc1-final" />
+        <dependency id="EntityFramework.SqlServer" version="7.0.0-rc1-final" />
+        <dependency id="System.Diagnostics.Contracts" version="4.0.0" />
+        <dependency id="Microsoft.CSharp" version="4.0.0" />
+        <dependency id="LoreKeeper" version="1.0" />
+        <dependency id="LoreKeeper.Core" version="1.0" />
+      </group>
+    </dependencies>
+    
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="mscorlib" targetFramework="dnx451" />
+      <frameworkAssembly assemblyName="System" targetFramework="dnx451" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework="dnx451" />
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework="dnx451" />
+    </frameworkAssemblies>
+    
+  </metadata>
+  
+  <files>
+    <file src="..\..\artifacts\bin\LoreKeeper.EF7 Dnx\Release\dnx451\LoreKeeper.EF7.Dnx.dll" target="lib\dnx451\" />
+    <file src="..\..\artifacts\bin\LoreKeeper.EF7 Dnx\Release\dnx451\LoreKeeper.EF7.Dnx.xml" target="lib\dnx451\" />
+    <file src="..\..\artifacts\bin\LoreKeeper.EF7 Dnx\Release\dnx451\LoreKeeper.EF7.Dnx.pdb" target="lib\dnx451\" />
+
+    <file src="..\..\artifacts\bin\LoreKeeper.EF7 Dnx\Release\dnxcore50\LoreKeeper.EF7.Dnx.dll" target="lib\dnxcore50\" />
+    <file src="..\..\artifacts\bin\LoreKeeper.EF7 Dnx\Release\dnxcore50\LoreKeeper.EF7.Dnx.xml" target="lib\dnxcore50\" />
+    <file src="..\..\artifacts\bin\LoreKeeper.EF7 Dnx\Release\dnxcore50\LoreKeeper.EF7.Dnx.pdb" target="lib\dnxcore50\" />
+  </files>
+</package>

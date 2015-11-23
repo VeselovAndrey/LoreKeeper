@@ -1,0 +1,32 @@
+{
+  "id": "LoreKeeper.EF7",
+  "version": "1.0.0-rc1-final",
+  "description": "Entity Framework 7 implementation of LoreKeeper.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/VeselovAndrey/LoreKeeper"
+  },
+  "authors": [ "Andrey Veselov" ],
+  "tags": [ "CQRS", "QueryObject", "Data Access", "Query", "Command", "UnitOfWork", "Entity Framework", "EF7" ],
+  "projectUrl": "https://github.com/VeselovAndrey/LoreKeeper",
+  "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+
+  "dependencies": {
+    "EntityFramework.Core": "7.0.0-rc1-final",
+    "EntityFramework.Relational": "7.0.0-rc1-final",
+    "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
+
+    "LoreKeeper.Dnx": "",
+    "LoreKeeper.Core.Dnx": ""
+  },
+
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": {
+      "dependencies": {
+        "System.Diagnostics.Contracts": "4.0.0",
+        "Microsoft.CSharp": "4.0.0"
+      }
+    }
+  }
+}

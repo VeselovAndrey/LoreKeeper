@@ -46,6 +46,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspecs", "nuspecs", "{3228
 		build.scripts\nuget\LoreKeeper.Bootstrappers.Autofac.nuspec = build.scripts\nuget\LoreKeeper.Bootstrappers.Autofac.nuspec
 		build.scripts\nuget\LoreKeeper.Core.nuspec = build.scripts\nuget\LoreKeeper.Core.nuspec
 		build.scripts\nuget\LoreKeeper.EF6.nuspec = build.scripts\nuget\LoreKeeper.EF6.nuspec
+		build.scripts\nuget\LoreKeeper.EF7.nuspec = build.scripts\nuget\LoreKeeper.EF7.nuspec
 		build.scripts\nuget\LoreKeeper.nuspec = build.scripts\nuget\LoreKeeper.nuspec
 	EndProjectSection
 EndProject
@@ -57,6 +58,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build Scripts", "Build Scri
 		build.scripts\Settings.ps1 = build.scripts\Settings.ps1
 		build.scripts\Tests-Execute.AppVeyor.ps1 = build.scripts\Tests-Execute.AppVeyor.ps1
 	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "LoreKeeper.EF7 Dnx", "src\LoreKeeper.EF7.Dnx\LoreKeeper.EF7 Dnx.xproj", "{0E7A8819-92EA-41A7-99FC-ABB5EB179133}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "LoreKeeper.EF7.Tests", "tests\LoreKeeper.EF7.Tests\LoreKeeper.EF7.Tests.xproj", "{99476F0F-C505-4BFB-88C0-CF360EC1E465}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -262,6 +267,38 @@ Global
 		{272DBD76-6D22-4008-9960-DDB26974EEC7}.Release|x64.Build.0 = Release|Any CPU
 		{272DBD76-6D22-4008-9960-DDB26974EEC7}.Release|x86.ActiveCfg = Release|Any CPU
 		{272DBD76-6D22-4008-9960-DDB26974EEC7}.Release|x86.Build.0 = Release|Any CPU
+		{0E7A8819-92EA-41A7-99FC-ABB5EB179133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E7A8819-92EA-41A7-99FC-ABB5EB179133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E7A8819-92EA-41A7-99FC-ABB5EB179133}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{0E7A8819-92EA-41A7-99FC-ABB5EB179133}.Debug|ARM.Build.0 = Debug|Any CPU
+		{0E7A8819-92EA-41A7-99FC-ABB5EB179133}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0E7A8819-92EA-41A7-99FC-ABB5EB179133}.Debug|x64.Build.0 = Debug|Any CPU
+		{0E7A8819-92EA-41A7-99FC-ABB5EB179133}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0E7A8819-92EA-41A7-99FC-ABB5EB179133}.Debug|x86.Build.0 = Debug|Any CPU
+		{0E7A8819-92EA-41A7-99FC-ABB5EB179133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E7A8819-92EA-41A7-99FC-ABB5EB179133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E7A8819-92EA-41A7-99FC-ABB5EB179133}.Release|ARM.ActiveCfg = Release|Any CPU
+		{0E7A8819-92EA-41A7-99FC-ABB5EB179133}.Release|ARM.Build.0 = Release|Any CPU
+		{0E7A8819-92EA-41A7-99FC-ABB5EB179133}.Release|x64.ActiveCfg = Release|Any CPU
+		{0E7A8819-92EA-41A7-99FC-ABB5EB179133}.Release|x64.Build.0 = Release|Any CPU
+		{0E7A8819-92EA-41A7-99FC-ABB5EB179133}.Release|x86.ActiveCfg = Release|Any CPU
+		{0E7A8819-92EA-41A7-99FC-ABB5EB179133}.Release|x86.Build.0 = Release|Any CPU
+		{99476F0F-C505-4BFB-88C0-CF360EC1E465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99476F0F-C505-4BFB-88C0-CF360EC1E465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99476F0F-C505-4BFB-88C0-CF360EC1E465}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{99476F0F-C505-4BFB-88C0-CF360EC1E465}.Debug|ARM.Build.0 = Debug|Any CPU
+		{99476F0F-C505-4BFB-88C0-CF360EC1E465}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{99476F0F-C505-4BFB-88C0-CF360EC1E465}.Debug|x64.Build.0 = Debug|Any CPU
+		{99476F0F-C505-4BFB-88C0-CF360EC1E465}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{99476F0F-C505-4BFB-88C0-CF360EC1E465}.Debug|x86.Build.0 = Debug|Any CPU
+		{99476F0F-C505-4BFB-88C0-CF360EC1E465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99476F0F-C505-4BFB-88C0-CF360EC1E465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99476F0F-C505-4BFB-88C0-CF360EC1E465}.Release|ARM.ActiveCfg = Release|Any CPU
+		{99476F0F-C505-4BFB-88C0-CF360EC1E465}.Release|ARM.Build.0 = Release|Any CPU
+		{99476F0F-C505-4BFB-88C0-CF360EC1E465}.Release|x64.ActiveCfg = Release|Any CPU
+		{99476F0F-C505-4BFB-88C0-CF360EC1E465}.Release|x64.Build.0 = Release|Any CPU
+		{99476F0F-C505-4BFB-88C0-CF360EC1E465}.Release|x86.ActiveCfg = Release|Any CPU
+		{99476F0F-C505-4BFB-88C0-CF360EC1E465}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -282,5 +319,7 @@ Global
 		{272DBD76-6D22-4008-9960-DDB26974EEC7} = {6CF08986-2B30-4816-B91F-2CEB6335AEA4}
 		{3228DEEE-A565-4EBE-B026-44CB6FDE161B} = {41354E40-9328-4A58-8200-3E1CF5D926CC}
 		{9A627286-53E5-48FE-8BB2-406159423C26} = {41354E40-9328-4A58-8200-3E1CF5D926CC}
+		{0E7A8819-92EA-41A7-99FC-ABB5EB179133} = {5AF1BF45-0CC2-4C4A-98DD-14E8FA154D71}
+		{99476F0F-C505-4BFB-88C0-CF360EC1E465} = {6CF08986-2B30-4816-B91F-2CEB6335AEA4}
 	EndGlobalSection
 EndGlobal
