@@ -1,6 +1,6 @@
 {
   "id": "LoreKeeper.EF7",
-  "version": "1.0.0-rc1-final",
+  "version": "1.0.0-rc1-final-1",
   "description": "Entity Framework 7 implementation of LoreKeeper.",
   "repository": {
     "type": "git",

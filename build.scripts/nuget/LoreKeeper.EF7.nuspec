@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>LoreKeeper.EF7</id>
-    <version>1.0.0-rc1-final-0</version>
+    <version>1.0.0-rc1-final-1</version>
     <title>LoreKeeper: Entity Framework 7 implementation.</title>
     <authors>Andrey Veselov</authors>
     <owners>Andrey Veselov</owners>
@@ -27,7 +27,7 @@
       <group targetFramework="dnx451">
         <dependency id="EntityFramework.Core" version="7.0.0-rc1-final" />
         <dependency id="EntityFramework.Relational" version="7.0.0-rc1-final" />
-        <dependency id="EntityFramework.SqlServer" version="7.0.0-rc1-final" />
+        <dependency id="EntityFramework.MicrosoftSqlServer" version="7.0.0-rc1-final" />
         <dependency id="LoreKeeper" version="1.0" />
         <dependency id="LoreKeeper.Core" version="1.0" />
       </group>
@@ -35,7 +35,7 @@
       <group targetFramework="dnxcore50">
         <dependency id="EntityFramework.Core" version="7.0.0-rc1-final" />
         <dependency id="EntityFramework.Relational" version="7.0.0-rc1-final" />
-        <dependency id="EntityFramework.SqlServer" version="7.0.0-rc1-final" />
+        <dependency id="EntityFramework.MicrosoftSqlServer" version="7.0.0-rc1-final" />
         <dependency id="System.Diagnostics.Contracts" version="4.0.0" />
         <dependency id="Microsoft.CSharp" version="4.0.0" />
         <dependency id="LoreKeeper" version="1.0" />
