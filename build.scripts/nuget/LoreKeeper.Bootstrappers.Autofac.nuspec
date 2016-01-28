@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>LoreKeeper.Bootstrappers.Autofac</id>
-    <version>1.0.0-beta7-130</version>
+    <version>1.0.0-rc1-177</version>
     <title>LoreKeeper: Autofac bootstrapper.</title>
     <authors>Andrey Veselov</authors>
     <owners>Andrey Veselov</owners>
@@ -28,12 +28,12 @@
 
     <dependencies>
       <group targetFramework="dnx451">
-        <dependency id="Autofac" version="4.0.0-beta7-130" />
+        <dependency id="Autofac" version="4.0.0-rc1-177" />
         <dependency id="LoreKeeper" version="1.0.0" />
         <dependency id="LoreKeeper.Core" version="1.0.0" />
       </group>
       <group targetFramework="dnxcore50">
-        <dependency id="Autofac" version="4.0.0-beta7-130" />
+        <dependency id="Autofac" version="4.0.0-rc1-177" />
         <dependency id="System.Diagnostics.Contracts" version="4.0.0" />
         <dependency id="Microsoft.CSharp" version="4.0.0" />
         <dependency id="LoreKeeper" version="1.0.0" />
